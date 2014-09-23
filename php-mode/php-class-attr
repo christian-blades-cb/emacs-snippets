@@ -1,0 +1,28 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: php-class-attr
+# key: attr
+# binding: direct-keybinding
+# contributor: Christian Blades <christian.blades@gmail.com>
+# --
+
+/**
+ * @var ${2:type}
+ */
+private \$${1:variable};
+
+/**
+ * @return $2
+ */
+public get${1:$(s-upper-camel-case yas-text)}()
+{
+    return \$this->\$$1;
+}
+
+/**
+ * @param $2 \$$1
+ */
+public set${1:$(s-upper-camel-case yas-text)}(\$$1)
+{
+    \$this->\$$1 = \$$1;
+}
+$0
