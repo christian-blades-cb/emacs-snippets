@@ -15,7 +15,7 @@ private \$${1:variable};
  */
 public function get${1:$(s-upper-camel-case yas-text)}()
 {
-    return \$this->\$$1;
+    return \$this->$1;
 }
 
 /**
@@ -23,6 +23,6 @@ public function get${1:$(s-upper-camel-case yas-text)}()
  */
 public function set${1:$(s-upper-camel-case yas-text)}(\$$1)
 {
-    \$this->\$$1 = \$$1;
+    \$this->$1 = \$$1;
 }
 $0
