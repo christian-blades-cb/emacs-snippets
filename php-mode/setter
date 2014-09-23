@@ -1,0 +1,9 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: setter
+# key: setter
+# binding: direct-keybinding
+# --
+public function set${1:$(s-upper-camel-case yas-text)}(\$$1)
+{
+    $this->${1:`(or (yas-selected-text) "variable")`} = \$$1;
+}

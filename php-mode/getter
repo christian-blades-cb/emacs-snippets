@@ -1,0 +1,9 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: getter
+# key: getter
+# binding: direct-keybinding
+# --
+public function get${1:$(s-upper-camel-case yas-text)}()
+{
+    return $this->${1:`(or (yas-selected-text) "variable")`};
+}
