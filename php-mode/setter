@@ -3,6 +3,9 @@
 # key: setter
 # binding: direct-keybinding
 # --
+/**
+ * @param ${2:type} \$$1
+ */
 public function set${1:$(s-upper-camel-case yas-text)}(\$$1)
 {
     $this->${1:`(or (yas-selected-text) "variable")`} = \$$1;

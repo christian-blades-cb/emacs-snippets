@@ -3,6 +3,9 @@
 # key: getter
 # binding: direct-keybinding
 # --
+/**
+ * @return ${2:type}
+ */
 public function get${1:$(s-upper-camel-case yas-text)}()
 {
     return $this->${1:`(or (yas-selected-text) "variable")`};
